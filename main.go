@@ -3,8 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var message string = `My name is "Oliver Queen".
-	I am the arrow`
-	// %t for bool format to string
-	fmt.Printf("message: %s \n", message)
+	var point = 8
+
+	if point == 10 {
+		fmt.Println("Passed perfectly")
+	} else if point > 5 {
+		fmt.Println("Passed")
+	} else if point == 4 {
+		fmt.Println("Almost there")
+	} else {
+		fmt.Printf("You can do better! Your score is %d\n", point)
+	}
 }
