@@ -8,9 +8,12 @@ import (
 func main() {
 	var i = 0
 
-	for i < 5 {
+	for {
 		fmt.Println(strings.Repeat("#", i))
 		i++
+		if i == 10 {
+			break
+		}
 	}
 
 }
