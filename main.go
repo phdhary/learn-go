@@ -3,13 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var point = 10000.0
+	var point = 5
 
-	if percent := point / 100; percent >= 100 {
-		fmt.Printf("%.1f%s Passed perfectly", percent, "%")
-	} else if point >= 70 {
-		fmt.Printf("%.1f%s Good", percent, "%")
-	} else {
-		fmt.Printf("You can do better! Your score is %f\n", point)
+	switch point {
+	case 8:
+		fmt.Println("perfect")
+	case 7:
+		fmt.Println("good")
+	default:
+		fmt.Println("not bad")
 	}
+
 }
