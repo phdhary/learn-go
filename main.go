@@ -5,10 +5,10 @@ import "fmt"
 func main() {
 	var point = 5
 
-	switch point {
-	case 8:
+	switch {
+	case point == 8:
 		fmt.Println("perfect")
-	case 7, 6, 5, 4:
+	case (point < 8) && (point > 3):
 		fmt.Println("good")
 	default:
 		fmt.Println("not bad")
