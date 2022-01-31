@@ -7,8 +7,7 @@ import (
 func main() {
 	var firstName string = "Berto"
 
-	var lastName string
-	lastName = "Chagreta"
+	lastName := "Chagreta"
 
 	fmt.Printf("Hello %s %s!\n", firstName, lastName)
 }
