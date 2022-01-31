@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var exist bool = true
+	var message string = "Hello"
 	// %t for bool format to string
-	fmt.Printf("exist? %t \n", exist)
+	fmt.Printf("message: %s \n", message)
 }
