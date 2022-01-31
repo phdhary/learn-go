@@ -6,15 +6,13 @@ import (
 
 func main() {
 
-	for i := 1; i <= 10; i++ {
-		if i%2 == 1 {
-			continue
+outerLoop:
+	for i := 0; i < 5; i++ {
+		for j := 0; j < 5; j++ {
+			if i == 3 {
+				break outerLoop
+			}
+			fmt.Print("matrix [", i, "][", j, "]", "\n")
 		}
-
-		if i > 8 {
-			break
-		}
-
-		fmt.Println(i)
 	}
 }
