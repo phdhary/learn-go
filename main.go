@@ -6,8 +6,11 @@ import (
 )
 
 func main() {
-	for i := 0; i < 10; i++ {
+	var i = 0
+
+	for i < 5 {
 		fmt.Println(strings.Repeat("#", i))
+		i++
 	}
 
 }
