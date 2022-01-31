@@ -1,19 +1,11 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	var firstName string = "Berto"
-
-	lastName := "Chagreta"
-
-	_ = "this is variable underscore that will be ignored"
-	_ = "this is variable underscore that will be ignored too"
-
-	fruit, _ := "apple", "grape"
-
-	fmt.Printf("Hello %s %s!\n", firstName, lastName)
-	fmt.Print(fruit)
+	// new keyword to create var with type's default pointer value
+	name := new(string)
+	fmt.Println(name)
+	// to access it's value use asterisk *
+	fmt.Println(*name)
 }
