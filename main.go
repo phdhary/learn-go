@@ -8,7 +8,7 @@ func main() {
 	switch point {
 	case 8:
 		fmt.Println("perfect")
-	case 7:
+	case 7, 6, 5, 4:
 		fmt.Println("good")
 	default:
 		fmt.Println("not bad")
