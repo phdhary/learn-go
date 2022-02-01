@@ -7,7 +7,16 @@ import (
 
 func main() {
 
-	var s1 = Student{Name: "asd", Grade: 10}
+	var bd Hitung
 
-	fmt.Println(s1.Name)
+	bd = Persegi{Sisi: 5}
+
+	fmt.Println(bd.Keliling())
+	fmt.Println(bd.Luas())
+
+	bd = Lingkaran{Diameter: 82}
+	fmt.Println(bd.Keliling())
+	fmt.Println(bd.Luas())
+	fmt.Println(bd.(Lingkaran).JariJari())
+
 }
