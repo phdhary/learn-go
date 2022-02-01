@@ -1,13 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 	// slice
-	var fruits = []string{"apple", "grape", "banana", "melon"}
-
-	fmt.Println(fruits[0])
-
+	var fruitsA = []string{"apple", "grape"}
+	// array
+	var fruitsB = [2]string{"banana", "melon"}
+	// array
+	var fruitsC = [...]string{"papaya", "grape"}
 }
