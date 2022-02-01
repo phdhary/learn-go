@@ -1,10 +1,15 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
-	// slice
-	var fruitsA = []string{"apple", "grape"}
-	// array
-	var fruitsB = [2]string{"banana", "melon"}
-	// array
-	var fruitsC = [...]string{"papaya", "grape"}
+	var numberA int = 4
+	var numberB *int = &numberA
+
+	fmt.Println("numberA (value)    :", numberA)
+	fmt.Println("numberA (address)    :", &numberA)
+	fmt.Println("numberB (value)    :", *numberB)
+	fmt.Println("numberB (address)    :", numberB)
 }
