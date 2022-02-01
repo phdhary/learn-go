@@ -5,10 +5,10 @@ import (
 )
 
 func main() {
-	var fruits = [...]string{"peach", "pear", "banana", "melon"}
-
-	for _, fruit := range fruits {
-		fmt.Printf("fruit name: %s\n", fruit)
-	}
+	var fruits = make([]string, 3)
+	fruits[0] = "melon"
+	fruits[1] = "peach"
+	fruits[2] = "apple"
+	fmt.Println(fruits)
 
 }
