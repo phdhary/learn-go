@@ -1,7 +1,13 @@
 package main
 
-import "learn_go/library"
+import (
+	"fmt"
+	. "learn_go/library"
+)
 
 func main() {
-	library.SayHello("don")
+
+	var s1 = Student{Name: "asd", Grade: 10}
+
+	fmt.Println(s1.Name)
 }
