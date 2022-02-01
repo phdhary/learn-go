@@ -5,12 +5,8 @@ import (
 )
 
 func main() {
-	var names [4]string
+	var fruits = [4]string{"peach", "pear", "banana", "melon"}
 
-	names[0] = "john"
-	names[1] = "deto"
-	names[2] = "berto"
-	names[3] = "bernado"
-
-	fmt.Println(names, names[3])
+	fmt.Println("fruits count: ", len(fruits))
+	fmt.Println("fruits: ", fruits)
 }
