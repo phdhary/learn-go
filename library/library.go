@@ -4,8 +4,9 @@ import (
 	"fmt"
 )
 
-func SayHello() {
+func SayHello(name string) {
 	fmt.Println("hello")
+	introduce(name)
 }
 
 func introduce(name string) {
