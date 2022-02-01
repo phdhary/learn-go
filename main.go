@@ -8,16 +8,22 @@ import (
 func main() {
 
 	runtime.GOMAXPROCS(2)
-	go print(5, "good")
-	print(5, "anakin")
+	var messages = make(chan string)
 
-	var input string
-	fmt.Scanln(&input)
-
-}
-
-func print(till int, message string) {
-	for i := 0; i < till; i++ {
-		fmt.Println((i + 1), message)
+	var sayHelloTo = func(name string) {
+		var data = fmt.Sprintf("Hello %s", name)
+		messages <- data
 	}
+
+	go sayHelloTo("dude 1")
+	go sayHelloTo("dude 2")
+	go sayHelloTo("dude 3")
+
+	var message1 = <-messages
+	fmt.Println(message1)
+	var message2 = <-messages
+	fmt.Println(message2)
+	var message3 = <-messages
+	fmt.Println(message3)
+
 }
