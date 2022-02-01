@@ -5,10 +5,9 @@ import (
 )
 
 func main() {
-	var fruits = make([]string, 3)
-	fruits[0] = "melon"
-	fruits[1] = "peach"
-	fruits[2] = "apple"
-	fmt.Println(fruits)
+	// slice
+	var fruits = []string{"apple", "grape", "banana", "melon"}
+
+	fmt.Println(fruits[0])
 
 }
