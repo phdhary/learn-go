@@ -7,8 +7,8 @@ import (
 func main() {
 	var fruits = [...]string{"peach", "pear", "banana", "melon"}
 
-	for i, fruit := range fruits {
-		fmt.Printf("Elements %d: %s\n", i, fruit)
+	for _, fruit := range fruits {
+		fmt.Printf("fruit name: %s\n", fruit)
 	}
 
 }
