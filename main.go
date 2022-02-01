@@ -2,21 +2,22 @@ package main
 
 import (
 	"fmt"
-	. "learn_go/library"
+	"runtime"
 )
 
 func main() {
 
-	var bd Hitung
+	runtime.GOMAXPROCS(2)
+	go print(5, "good")
+	print(5, "anakin")
 
-	bd = Persegi{Sisi: 5}
+	var input string
+	fmt.Scanln(&input)
 
-	fmt.Println(bd.Keliling())
-	fmt.Println(bd.Luas())
+}
 
-	bd = Lingkaran{Diameter: 82}
-	fmt.Println(bd.Keliling())
-	fmt.Println(bd.Luas())
-	fmt.Println(bd.(Lingkaran).JariJari())
-
+func print(till int, message string) {
+	for i := 0; i < till; i++ {
+		fmt.Println((i + 1), message)
+	}
 }
